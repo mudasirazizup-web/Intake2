@@ -1,0 +1,137 @@
+    /* BODY STYLE */
+    body{
+        margin: 0; /* remove default space around page */
+        font-family: Arial, sans-serif; /* set font style */
+        background-color: #f5f5f5; /* light gray background */
+    }
+
+    /* HEADER */
+    header{
+        height: 100px; /* height of header */
+        background-color: blueviolet; /* background color */
+        text-align: center; /* center text horizontally */
+        color: white; /* text color */
+        padding-top: 10px; /* space inside top */
+    }
+
+    /* LINKS */
+    a{
+        color: white; /* link color */
+        margin: 15px; /* space between links */
+        text-decoration: none; /* remove underline */
+        font-weight: bold; /* make text bold */
+    }
+
+    /* WHEN MOUSE HOVER ON LINK */
+    a:hover{
+        text-decoration: underline; /* show underline */
+    }
+
+    /* HERO IMAGE SECTION */
+    .images{
+        height: 400px; /* section height */
+        background-image: url(./undraw_my-app_jscv.svg); /* background image */
+        background-size: cover; /* fill full area */
+        background-position: center; /* center image */
+    }
+
+    /* SECTION TITLE */
+    .img{
+        text-align: center; /* center text */
+        background-color: rgb(29, 2, 54); /* dark background */
+        color: aquamarine; /* text color */
+        padding: 15px; /* space inside */
+        margin: 0; /* remove outside space */
+    }
+
+    /* CARD STYLE */
+    .gallery{
+        width: 230px; /* card width */
+        border-radius: 10px; /* rounded corners */
+        overflow: hidden; /* hide overflow content */
+        margin: 15px; /* space outside */
+        display: inline-block; /* cards in one line */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* shadow effect */
+        background-color: white; /* card background */
+        transition: 0.3s; /* smooth animation */
+    }
+
+    /* CARD HOVER EFFECT */
+    .gallery:hover{
+        transform: translateY(-10px); /* move up */
+    }
+
+    /* IMAGE INSIDE CARD */
+    .gallery img{
+        width: 100%; /* full width */
+        height: 160px; /* fixed height */
+        object-fit: cover; /* crop image nicely */
+    }
+
+    /* CARD CONTENT */
+    .card-content{
+        padding: 12px; /* space inside */
+        text-align: center; /* center text */
+    }
+
+    .card-content h3{
+        margin: 5px 0; /* space top & bottom */
+        color: #333; /* dark text */
+    }
+
+    /* DESCRIPTION TEXT */
+    .desc{
+        font-size: 14px; /* small text */
+        color: gray; /* gray color */
+        margin: 8px 0;
+    }
+
+    /* PRICE TEXT */
+    .price{
+        font-size: 18px; /* bigger text */
+        font-weight: bold; /* bold */
+        color: green; /* green color */
+        margin-bottom: 10px;
+    }
+
+    /* BUTTON */
+    .btn{
+        background-color: blueviolet; /* button color */
+        height: 40px; /* height */
+        width: 100%; /* full width */
+        color: white; /* text color */
+        font-weight: bold; /* bold text */
+        border: none; /* remove border */
+        border-radius: 5px; /* rounded corners */
+    }
+
+    /* BUTTON HOVER */
+    .btn:hover{
+        background-color: darkviolet; /* darker color */
+        cursor: pointer; /* pointer cursor */
+    }
+
+    /* FOOTER */
+    footer{
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    /* EXTRA BOX */
+    .box{
+        height: 100px;
+        width: 100px;
+        background-image: url(./logo-facebook.svg);
+        background-size: cover;
+        margin: auto; /* center horizontally */
+        transition: 1s; /* slow animation */
+        transform: skew(10deg); /* slant shape */
+    }
+
+    /* BOX HOVER EFFECT */
+    .box:hover{
+        transform: rotateY(360deg); /* rotate in 3D */
+    }
