@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Store</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header{
+            height: 100px;
+            background-color: blueviolet;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+        }
+
+        nav a{
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        .images{
+            height: 400px;
+            background-image: url(./undraw_my-app_jscv.svg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img{
+            text-align: center;
+            background-color: rgb(29, 2, 54);
+            color: aquamarine;
+            padding: 15px;
+            margin: 0;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* CARD STYLE */
+        .gallery{
+            width: 230px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        .gallery:hover{
+            transform: translateY(-10px);
+        }
+
+        .gallery img{
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 12px;
+            text-align: center;
+        }
+
+        .card-content h3{
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .desc{
+            font-size: 14px;
+            color: gray;
+            margin: 8px 0;
+        }
+
+        .price{
+            font-size: 18px;
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            background-color: blueviolet;
+            height: 40px;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: darkviolet;
+            cursor: pointer;
+        }
+
+        footer{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-image: url(./logo-facebook.svg);
+            background-size: cover;
+            margin: auto;
+            transition: 1s;
+            transform: skew(10deg);
+        }
+
+        .box:hover{
+            transform: rotateY(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome To iPhone Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="images"></div>
+
+    <!-- SECTION 1 -->
+    <h2 class="img">Popular iPhones</h2>
+    <section>
+
+        <div class="gallery">
+            <img src="./iphone13.jpg" alt="iPhone 13">
+            <div class="card-content">
+                <h3>iPhone 13</h3>
+                <p class="desc">Powerful A15 chip, amazing camera, and long battery life.</p>
+                <p class="price">$699</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="./iphone14.jpg" alt="iPhone 14">
+            <div class="card-content">
+                <h3>iPhone 14</h3>
+                <p class="desc">Improved performance, better photos, and sleek design.</p>
+                <p class="price">$799</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="./iphone15.jpg" alt="iPhone 15">
+            <div class="card-content">
+                <h3>iPhone 15</h3>
+                <p class="desc">Latest design with USB-C and powerful performance.</p>
+                <p class="price">$899</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 2 -->
+    <h2 class="img">Budget iPhones</h2>
+    <section>
+
+        <div class="gallery">
+            <img src="./iphonese.jpg" alt="iPhone SE">
+            <div class="card-content">
+                <h3>iPhone SE</h3>
+                <p class="desc">Compact, fast, and affordable with A15 chip.</p>
+                <p class="price">$399</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="./iphone11.jpg" alt="iPhone 11">
+            <div class="card-content">
+                <h3>iPhone 11</h3>
+                <p class="desc">Great camera and performance at a lower price.</p>
+                <p class="price">$499</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="./iphone12.jpg" alt="iPhone 12">
+            <div class="card-content">
+                <h3>iPhone 12</h3>
+                <p class="desc">5G speed, OLED display, and stylish design.</p>
+                <p class="price">$599</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EXTRA -->
+    <section>
+        <div class="box"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Love From Mudasir <br>
+            All Rights Reserved <br>
+            2023 - 2026
+        </p>
+    </footer>
+
+</body>
+</html>
