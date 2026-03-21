@@ -1,0 +1,84 @@
+header{
+    height: 100px;
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    color: #0a589c;
+}
+a{
+    color: #0a589c;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.images{
+    height: 500px;
+    width: 100%;
+
+    background-image: url(./undraw_my-app_jscv.svg);
+}
+.img{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 10px;
+    background-color: rgb(29, 2, 54);
+    color: aquamarine;
+}
+.gallery{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+   margin: 5px;
+   display: inline-block;
+   box-shadow: 3px 3px 3px red;
+}
+.gallery.sometext{
+    text-align: center;
+    padding: 10px;
+}
+.gallery img{
+    width: 100%;
+}
+.headingabout{
+    color: aqua;
+    background-color: blueviolet;
+    text-align: center;
+}
+.mypara{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Montserrat', Times, serif;
+
+}
+.btn{
+    background-color: blueviolet;
+    height: 50px;
+    width: 80px;
+    color: wheat;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: brown;
+    font-size: x-small;
+}
+footer{
+    height:120px;
+    width: 100%;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 9px solid black;
+    text-align: center;
+    margin-top: 50px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-image: url(./logo-facebook.svg);
+    transition-duration: 1s;
+    transform: skew(130deg);
+}
+.box:hover{
+transform: rotateY(360deg);
+
+}
