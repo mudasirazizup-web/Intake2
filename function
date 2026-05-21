@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions and Variables</title>
+</head>
+
+<body>
+
+
+ // ====================================
+        // SIMPLE FUNCTION
+        // ====================================
+
+        function morning() {
+
+            console.log("My Name Is Mudasir");
+            console.log("My Best Friend");
+
+            // Display text on the webpage
+            document.write("Hello <br>");
+
+        }
+
+        // Calling the function
+        morning();
+
+
+
+        // ====================================
+        // FUNCTION WITHOUT PARAMETERS
+        // ====================================
+
+        function mor() {
+
+            console.log("Good Morning");
+            console.log("Good Evening");
+
+        }
+
+        // Calling function multiple times
+        mor();
+        mor();
+        mor();
+
+
+
+        // ====================================
+        // FUNCTION FOR ADDITION
+        // ====================================
+
+        function add() {
+
+            console.log(7 + 6);
+
+        }
+
+        add();
+
+
+
+        // ====================================
+        // FUNCTION WITH PARAMETERS
+        // ====================================
+
+        function addition(name) {
+
+            console.log(`Good Morning ${name}`);
+
+        }
+
+        addition("Mudasir");
+
+
+
+        // ====================================
+        // FUNCTION WITH TWO PARAMETERS
+        // ====================================
+
+        function mul(x, y) {
+
+            console.log(x + y);
+
+        }
+
+        mul(3, 4);
+        mul(100, 200);
+
+
+
+        // ====================================
+        // FUNCTION EXPRESSION
+        // ====================================
+
+        const myFunction = function(name) {
+
+            console.log("My New Function:", name);
+
+        };
+
+        myFunction("Mudasir");
+
+
+
+        // ====================================
+        // RETURN FUNCTION
+        // ====================================
+
+        function sub(x, y) {
+
+            return x - y;
+
+        }
+
+        // Display returned value
+        console.log(sub(99, 4));
+
+        // Store returned value in variable
+        const sum = sub(66, 4);
+
+        console.log(sum);
+
+
+
+    <h1>JavaScript Practice</h1>
+
+    <script>
+
+        // =====================================
+        // NORMAL FUNCTION
+        // =====================================
+
+        function square(x) {
+
+            return x * x;
+
+        }
+
+        // Calling the function
+        console.log(square(4));
+
+        // Store returned value in a variable
+        const sq = square(5);
+
+        console.log(sq);
+
+
+
+        // =====================================
+        // FUNCTION EXPRESSION
+        // =====================================
+
+        let squareFunction = function(x) {
+
+            return x * x;
+
+        };
+
+        console.log(squareFunction(4));
+
+
+
+        // =====================================
+        // ARROW FUNCTION
+        // =====================================
+
+        const add = (name, age) => {
+
+            console.log("Hi From Arrow Function:", name);
+            console.log("Age:", age);
+
+        };
+
+        add("Mudasir", 45);
+
+
+
+        // =====================================
+        // VARIABLES
+        // =====================================
+
+        let c = 56;      // can change value
+        var e = 45;      // old way to create variable
+        const b = 56;    // fixed value
+
+
+
+        // =====================================
+        // FUNCTION SCOPE
+        // =====================================
+
+        function name1() {
+
+            const b = 45;
+
+            // This b only works inside the function
+            console.log("Inside Function:", b);
+
+        }
+
+        name1();
+
+        // Global variable
+        console.log("Outside Function:", e);
+
+    </script>
+
+</body>
+</html>
