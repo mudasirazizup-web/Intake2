@@ -6,63 +6,94 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script>
 
-        function morning(){
-            console.log("My NAme Is Mudasir");
-            console.log("My Best Fred");
-            document.write("Hello")
-        }
-        morning()
+<script>
 
-        // name of the function mor and inside 
-        // the function wil good morning
+    // Function with no parameters
+    function morning() {
 
-        function mor() {
-            console.log("Good Morning ");
-            console.log("Good evening")
-        }
-        mor()
-        mor()
-        mor()
+        console.log("My Name Is Mudasir"); // Print name message
+        console.log("My Best Friend"); // Print friend message
 
-        function add(){
-            console.log(7+6);
-        }
-        add()
+        document.write("Hello"); // Write directly to HTML page
+    }
 
-        function addition(name) {
-            console.log(`Good MOrning ${name}`);
-        }
-        addition("Mudasir")
-
-        function mul(x,y){
-            console.log(x+y)
-        }
-        mul(3,4)
-        mul(100,200)
+    morning(); // Call function
 
 
-        const name= function (name) {
-            console.log("My New Function",name); 
-        }
-        name("Mudasir")
+    // ----------------------------
+    // Function with no parameters (repeat call example)
+    // ----------------------------
 
-        function sub(x,y) {
-            return x-y
-        }
-        console.log(sub(99,4));
-        const sum=sub(66,4)
-        console.log(sum);
-        
-        
+    function mor() {
+        console.log("Good Morning"); // Morning message
+        console.log("Good evening"); // Evening message
+    }
 
+    mor(); // First call
+    mor(); // Second call
+    mor(); // Third call
 
 
+    // ----------------------------
+    // Simple function
+    // ----------------------------
+
+    function add() {
+        console.log(7 + 6); // Print sum
+    }
+
+    add(); // Call function
 
 
+    // ----------------------------
+    // Function with parameter
+    // ----------------------------
 
-    </script>
+    function addition(name) {
+        console.log(`Good Morning ${name}`); // Greeting with name
+    }
+
+    addition("Mudasir"); // Pass argument
+
+
+    // ----------------------------
+    // Function with two parameters
+    // ----------------------------
+
+    function mul(x, y) {
+        console.log(x + y); // Print sum of x and y
+    }
+
+    mul(3, 4); // 7
+    mul(100, 200); // 300
+
+
+    // ----------------------------
+    // Function expression
+    // ----------------------------
+
+    const name = function (name) {
+        console.log("My New Function", name); // Print name
+    };
+
+    name("Mudasir"); // Call function expression
+
+
+    // ----------------------------
+    // Function with return value
+    // ----------------------------
+
+    function sub(x, y) {
+        return x - y; // return difference
+    }
+
+    console.log(sub(99, 4)); // Output result directly
+
+    const sum = sub(66, 4); // Store returned value
+    console.log(sum); // Print stored value
+
+</script>
+
 </body>
 </html>
