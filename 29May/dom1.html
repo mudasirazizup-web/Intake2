@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="head">Welcome</h1>
+    <div class="heading1">welocme</div>
+    <div class="heading">google</div>
+
+
+</body>
+<script>
+    const head= document.querySelector("#head");
+    // console.log(head.innerHTML="mudasir");
+
+    const myid= document.getElementById("head");
+    // console.log(myid.innerHTML);
+    
+    const byclass=document.getElementsByClassName("heading")
+    // console.log(byclass[0].innerHTML);
+    
+    //
+
+    const bytag= document.getElementsByTagName("h1")
+    // console.log(bytag[0].innerHTML="<h2>Mudasir Is Good </h1>")
+
+        
+    // i want to add attribute
+    const num=document.querySelector("#head");
+    // console.log(num.setAttribute("class", "heading"));
+    // console.log(num);
+    // another example set attribute
+
+    const addnew=document.querySelector(".heading1")
+    // addnew.setAttribute("id","myheading")
+    // console.log(addnew);
+
+    // style using javascript.
+
+    const mud= document.querySelector("#head");
+   mud.style.backgroundColor="red";
+   mud.style.padding="15px";
+   mud.style.borderRadius="5px"
+
+    console.log(mud);
+// delete elemement
+
+const delnum=document.querySelector(".heading1");
+delnum.remove()
+
+    
+    
+
+    
+    
+
+    
+
+</script>
+</html>
