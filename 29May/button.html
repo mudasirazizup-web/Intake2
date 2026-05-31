@@ -6,23 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-     <h1 id="head">Mudasir</h1>
-    <h2 class="heading">Lim NUmber</h2>
-    <button onclick=add("Muzamil")>Show Name </button>
-    <button onclick=add("Mudasir")>Show Name </button>
-</body>
-<script>
-    function add(name) {
 
-        const jason=document.createElement("h1");
-    // add atttribute
-    jason.setAttribute("class","myjason")
-    jason.setAttribute("id","myjason")
-    jason.innerHTML=name;
-    jason.style.backgroundColor="green"
-    const body=document.querySelector("body");
-    body.appendChild(jason)
-    console.log(jason);
-    }
-</script>
+    <h1 id="head">Mudasir</h1>
+    <h2 class="heading">Lim Number</h2>
+
+    <!-- Pass "Muzamil" as an argument -->
+    <button onclick="add('Muzamil')">Show Muzamil</button>
+
+    <!-- Pass "Mudasir" as an argument -->
+    <button onclick="add('Mudasir')">Show Mudasir</button>
+
+    <script>
+
+        // Function to create and display a new h1 element
+        function add(name) {
+
+            const jason = document.createElement("h1"); // Create a new h1 element
+
+            jason.setAttribute("class", "myjason"); // Add class attribute
+
+            jason.setAttribute("id", "myjason"); // Add id attribute
+
+            jason.innerHTML = name; // Set text using the passed argument
+
+            jason.style.backgroundColor = "green"; // Set background color
+
+            const body = document.querySelector("body"); // Select the body element
+
+            body.appendChild(jason); // Add the new h1 element to the page
+
+            console.log(jason); // Display the element in the console
+        }
+
+    </script>
+
+</body>
 </html>
