@@ -1,97 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding -->
     <meta charset="UTF-8">
-
-    <!-- Makes the page responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page title shown in browser tab -->
     <title>Document</title>
 </head>
 <body>
 
-    <!-- Heading that will be shown/hidden -->
     <h1 id="hello" class="hello">Helllo</h1>
 
-    <!-- Button to show the heading -->
+    <!-- Show the heading -->
     <button onclick="hide()">Show</button>
 
-    <!-- Button to hide the heading -->
+    <!-- Hide the heading -->
     <button onclick="show()">Hide</button>
 
-    <!-- Button to toggle show/hide -->
-    <button onclick="both()">Both</button>
+    <!-- Toggle the heading visibility -->
+    <button onclick="both()">Both Hide and Show </button>
 
 </body>
 
 <script>
 
-    // Hides the heading
+    // Function to hide the h1 element
     function show() {
-        // Select the element with id="hello"
-        const change = document.querySelector("#hello");
 
-        // Print element in console
-        console.log(change);
+        const change = document.querySelector("#hello"); // Select the element with id="hello"
 
-        // Hide the element
-        change.style.display = "none";
+        console.log(change); // Display the element in the console
+
+        change.style.display = "none"; // Hide the element
     }
 
-    // Shows the heading
+    // Function to show the h1 element
     function hide() {
-        // Select the element with id="hello"
-        const change = document.querySelector("#hello");
 
-        // Print element in console
-        console.log(change);
+        const change = document.querySelector("#hello"); // Select the element with id="hello"
 
-        // Show the element
-        change.style.display = "block";
+        console.log(change); // Display the element in the console
+
+        change.style.display = "block"; // Show the element
     }
 
-    // Toggles the heading visibility
+    // Function to toggle show/hide
     function both() {
-        // Select the element with id="hello"
-        const change = document.querySelector("#hello");
 
-        // Print current display value
-        console.log(change.style.display);
+        const change = document.querySelector("#hello"); // Select the element with id="hello"
 
-        // If hidden, show it
-        if (change.style.display === "none") {
-            change.style.display = "block";
-        }
-        // Otherwise hide it
-        else {
-            change.style.display = "none";
+        console.log(change.style.display); // Display current display value
+
+        if (change.style.display === "none") { // Check if element is hidden
+
+            change.style.display = "block"; // Show the element
+
+        } else {
+
+            change.style.display = "none"; // Hide the element
         }
     }
 
-    // Function to create and add a new heading dynamically
+    // Function to create a new h1 element
     function add(name) {
 
-        // Select the body element
-        const body = document.querySelector("body");
+        const body = document.querySelector("body"); // Select the body element
 
-        // Create a new h1 element
-        const li = document.createElement("h1");
+        const li = document.createElement("h1"); // Create a new h1 element
 
-        // Set its content
-        li.innerHTML = `${name}`;
+        li.innerHTML = `${name}`; // Set text using the name argument
 
-        // Add an id attribute
-        li.setAttribute("id", "google");
+        li.setAttribute("id", "google"); // Add id attribute
 
-        // Append the new h1 to the body
-        body.appendChild(li);
+        body.appendChild(li); // Add the new element to the page
     }
 
-    // Add two new headings to the page
-    add("Mudasir");
-    add("Aziz");
+    add("Mudasir"); // Create first h1 element
+
+    add("Aziz"); // Create second h1 element
 
 </script>
 </html>
