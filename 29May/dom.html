@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in browser tab -->
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Heading that will be shown/hidden -->
+    <h1 id="hello" class="hello">Helllo</h1>
+
+    <!-- Button to show the heading -->
+    <button onclick="hide()">Show</button>
+
+    <!-- Button to hide the heading -->
+    <button onclick="show()">Hide</button>
+
+    <!-- Button to toggle show/hide -->
+    <button onclick="both()">Both</button>
+
+</body>
+
+<script>
+
+    // Hides the heading
+    function show() {
+        // Select the element with id="hello"
+        const change = document.querySelector("#hello");
+
+        // Print element in console
+        console.log(change);
+
+        // Hide the element
+        change.style.display = "none";
+    }
+
+    // Shows the heading
+    function hide() {
+        // Select the element with id="hello"
+        const change = document.querySelector("#hello");
+
+        // Print element in console
+        console.log(change);
+
+        // Show the element
+        change.style.display = "block";
+    }
+
+    // Toggles the heading visibility
+    function both() {
+        // Select the element with id="hello"
+        const change = document.querySelector("#hello");
+
+        // Print current display value
+        console.log(change.style.display);
+
+        // If hidden, show it
+        if (change.style.display === "none") {
+            change.style.display = "block";
+        }
+        // Otherwise hide it
+        else {
+            change.style.display = "none";
+        }
+    }
+
+    // Function to create and add a new heading dynamically
+    function add(name) {
+
+        // Select the body element
+        const body = document.querySelector("body");
+
+        // Create a new h1 element
+        const li = document.createElement("h1");
+
+        // Set its content
+        li.innerHTML = `${name}`;
+
+        // Add an id attribute
+        li.setAttribute("id", "google");
+
+        // Append the new h1 to the body
+        body.appendChild(li);
+    }
+
+    // Add two new headings to the page
+    add("Mudasir");
+    add("Aziz");
+
+</script>
+</html>
