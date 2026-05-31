@@ -8,57 +8,71 @@
 <body>
     
     <h1 id="head">Welcome</h1>
-    <div class="heading1">welocme</div>
+
+    <div class="heading1">welcome</div>
     <div class="heading">google</div>
 
-
 </body>
+
 <script>
-    const head= document.querySelector("#head");
-    // console.log(head.innerHTML="mudasir");
 
-    const myid= document.getElementById("head");
+    // Select element using querySelector (CSS selector)
+    const head = document.querySelector("#head");
+    // Can access or change HTML content using innerHTML
+    // head.innerHTML = "mudasir";
+
+    // Select element by ID (returns single element)
+    const myid = document.getElementById("head");
     // console.log(myid.innerHTML);
-    
-    const byclass=document.getElementsByClassName("heading")
+
+    // Select elements by class name (returns HTMLCollection)
+    const byclass = document.getElementsByClassName("heading");
     // console.log(byclass[0].innerHTML);
-    
-    //
 
-    const bytag= document.getElementsByTagName("h1")
-    // console.log(bytag[0].innerHTML="<h2>Mudasir Is Good </h1>")
+    // Select elements by tag name (returns HTMLCollection)
+    const bytag = document.getElementsByTagName("h1");
+    // console.log(bytag[0].innerHTML = "<h2>Mudasir Is Good</h2>");
 
-        
-    // i want to add attribute
-    const num=document.querySelector("#head");
-    // console.log(num.setAttribute("class", "heading"));
-    // console.log(num);
-    // another example set attribute
+    // ----------------------------
+    // Setting attributes
+    // ----------------------------
 
-    const addnew=document.querySelector(".heading1")
-    // addnew.setAttribute("id","myheading")
-    // console.log(addnew);
+    const num = document.querySelector("#head");
 
-    // style using javascript.
+    // Add a class attribute to element
+    // num.setAttribute("class", "heading");
 
-    const mud= document.querySelector("#head");
-   mud.style.backgroundColor="red";
-   mud.style.padding="15px";
-   mud.style.borderRadius="5px"
+    const addnew = document.querySelector(".heading1");
+
+    // Add an id attribute to element
+    // addnew.setAttribute("id", "myheading");
+
+    // ----------------------------
+    // Styling using JavaScript
+    // ----------------------------
+
+    const mud = document.querySelector("#head");
+
+    // Change background color
+    mud.style.backgroundColor = "red";
+
+    // Add padding
+    mud.style.padding = "15px";
+
+    // Add rounded corners
+    mud.style.borderRadius = "5px";
 
     console.log(mud);
-// delete elemement
 
-const delnum=document.querySelector(".heading1");
-delnum.remove()
+    // ----------------------------
+    // Delete element
+    // ----------------------------
 
-    
-    
+    const delnum = document.querySelector(".heading1");
 
-    
-    
-
-    
+    // Remove element from DOM
+    delnum.remove();
 
 </script>
+
 </html>
