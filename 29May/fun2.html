@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function square(x) {
+            return x*x;
+        }
+        console.log(square(4));
+        const sq=square(5)
+        console.log(sq);
+// function expression
+        let name= function square(x) {
+            return x*x;
+        }
+        console.log(name(4));
+
+        // Arrow function 
+        const add=(name, age)=>{
+            console.log("Hi From Arroq",name);
+        }
+        console.log(add("mudasir",45));
+
+        let c=56;
+        var e=45
+        const b=56;
+        function name1() {
+            const b=45;
+            console.log(b);
+        }
+        name1()
+        console.log(e);
+        
+        
+
+        
+        
+
+    </script>
+</body>
+</html>
