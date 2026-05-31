@@ -6,40 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function square(x) {
-            return x*x;
-        }
-        console.log(square(4));
-        const sq=square(5)
-        console.log(sq);
-// function expression
-        let name= function square(x) {
-            return x*x;
-        }
-        console.log(name(4));
 
-        // Arrow function 
-        const add=(name, age)=>{
-            console.log("Hi From Arroq",name);
-        }
-        console.log(add("mudasir",45));
+<script>
 
-        let c=56;
-        var e=45
-        const b=56;
-        function name1() {
-            const b=45;
-            console.log(b);
-        }
-        name1()
-        console.log(e);
-        
-        
+    // Function declaration: calculates square of a number
+    function square(x) {
+        return x * x; // return square result
+    }
 
-        
-        
+    console.log(square(4)); // Output: 16
 
-    </script>
+    // Store function result in a variable
+    const sq = square(5);
+    console.log(sq); // Output: 25
+
+
+    // ----------------------------
+    // Function expression
+    // ----------------------------
+
+    // Function stored inside a variable
+    let name = function square(x) {
+        return x * x; // return square result
+    };
+
+    console.log(name(4)); // Output: 16
+
+
+    // ----------------------------
+    // Arrow function
+    // ----------------------------
+
+    const add = (name, age) => {
+        console.log("Hi From Arrow", name, age); // prints message with name and age
+    };
+
+    console.log(add("mudasir", 45)); // function returns undefined
+
+
+    // ----------------------------
+    // Variables (scope example)
+    // ----------------------------
+
+    let c = 56;   // block scoped variable
+    var e = 45;   // function scoped variable
+    const b = 56; // constant value
+
+    function name1() {
+        const b = 45; // local variable (different from global b)
+        console.log(b); // prints 45 (local scope)
+    }
+
+    name1(); // call function
+
+    console.log(e); // prints 45 (global var)
+
+</script>
+
 </body>
 </html>
